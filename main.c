@@ -13,6 +13,8 @@ void menu() {
 }
 
 int main() {
+	int a = 0;
+	(void)a;
     srand(time(NULL));
     int choice;
     

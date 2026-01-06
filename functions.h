@@ -15,4 +15,6 @@ void print_quote(const char *quote);
 void view_quotes(const QuoteArray *quotes);
 const char* random_quote(const QuoteArray *quotes);
 void display_quotes(const QuoteArray *quotes, int count);
+void add_quote(const char *filename, QuoteArray *quotes);
+
 #endif

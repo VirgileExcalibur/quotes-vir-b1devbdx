@@ -47,12 +47,14 @@ const char* random_quote(const QuoteArray *quotes) {
 void display_quotes(const QuoteArray *quotes, int count) {
     if (count >= quotes->count) {
         printf("All Quotes:\n");
-        view_quotes(quotes);
-    } else {
+        view_quotes(quotes);} 
+    else {
         printf("First %d Quotes:\n", count);
         for (int i = 0; i < count; i++) {
             print_quote(quotes->quotes[i]);
         }
+    }
+}
 void add_quote(const char *filename, QuoteArray *quotes) {
     char new_quote[MAX_LENGTH];
     printf("Enter a new quote: ");

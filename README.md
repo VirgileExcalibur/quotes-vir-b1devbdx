@@ -10,3 +10,4 @@ A C program that generates programming quotes and jokes.
 ## Feature Branches
 - `contributor-1`: feature/add-quote
 - `contributor-2`: feature/display-quotes
+- `initiator` : feature/string-inputs

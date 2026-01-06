@@ -30,9 +30,14 @@ int main() {
             case 1:
                 print_quote(random_quote(quotes));
                 break;
-            case 2:
-                view_quotes(quotes);
+            case 2: {
+                int count;
+                printf("How many quotes to display? ");
+                scanf("%d", &count);
+                getchar(); // clear newline from buffer
+                display_quotes(quotes, count);
                 break;
+            }
             case 3:
                 printf("Good bye...\n");
                 free(quotes);

@@ -9,7 +9,8 @@ void menu() {
     printf("\n==== Programming Quotes ====\n");
     printf("1. Random quote\n");
     printf("2. All quotes\n");
-    printf("3. Exit\n");
+    printf("3. Add quotes\n");
+    printf("4. Exit\n");
 }
 
 int main() {
@@ -34,6 +35,9 @@ int main() {
                 view_quotes(quotes);
                 break;
             case 3:
+                add_quote("quotes.txt", quotes);
+                break;
+            case 4:
                 printf("Good bye...\n");
                 free(quotes);
                 return 0;
